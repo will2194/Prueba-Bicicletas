@@ -11,7 +11,7 @@ protocol LoginUseCase {
     func execute(email: String, password: String) async throws -> Bool
 }
 
-final class DefaultLoginUseCase: LoginUseCase {
+final class LoginUseCaseImpl: LoginUseCase {
     private let repository: LoginRepository
 
     init(repository: LoginRepository) {

@@ -13,11 +13,18 @@ struct Prueba_MacroplayApp: App {
     @StateObject var session = SessionManager()
     
     var body: some Scene {
-        WindowGroup {
-            let repository = LoginRepositoryImpl()
-            let useCase = DefaultLoginUseCase(repository: repository)
-            let viewModel = LoginViewModel(loginUseCase: useCase, session: session)
-            LoginView(viewModel: viewModel).environmentObject(session)
+            WindowGroup {
+                if session.isLoggedIn {
+                    let repository = StationRepositoryImpl()
+                    let useCase = GetStationsUseCase(repository: repository)
+                    let homeVM = HomeViewModel(getStationsUseCase: useCase, session: session)
+                    HomeView(viewModel: homeVM).environmentObject(session)
+                } else {
+                    let repository = LoginRepositoryImpl()
+                    let useCase = LoginUseCaseImpl(repository: repository)
+                    let viewModel = LoginViewModel(loginUseCase: useCase, session: session)
+                    LoginView(viewModel: viewModel).environmentObject(session)
+                }
+            }
         }
-    }
 }
