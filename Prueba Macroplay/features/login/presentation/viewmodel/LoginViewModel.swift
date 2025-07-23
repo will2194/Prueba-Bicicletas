@@ -13,6 +13,7 @@ final class LoginViewModel: ObservableObject {
     @Published var email: String = ""
     @Published var password: String = ""
     @Published var uiState: LoginUIState = .idle
+    @Published var isAuthenticated: Bool = false
 
     private let loginUseCase: LoginUseCase
     private let session: SessionManager
@@ -30,26 +31,13 @@ final class LoginViewModel: ObservableObject {
                 if success {
                     uiState = .success
                     session.isLoggedIn = true
+                    isAuthenticated = true
                 } else {
                     uiState = .error("Credenciales inválidas, revise su correo o contraseña")
                 }
-            } catch let error as NSError {
-                let message = firebaseErrorMessage(error)
-                uiState = .error(message)
+            } catch _ as NSError {
+                uiState = .error("Ocurrio un error intente mas tarde")
             }
-        }
-    }
-
-    private func firebaseErrorMessage(_ error: NSError) -> String {
-        switch AuthErrorCode(rawValue: error.code) {
-        case .wrongPassword:
-            return "Contraseña incorrecta"
-        case .invalidEmail:
-            return "Correo inválido"
-        case .userNotFound:
-            return "Usuario no encontrado"
-        default:
-            return error.localizedDescription
         }
     }
 }
