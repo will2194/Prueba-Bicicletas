@@ -1,19 +1,17 @@
 //
-//  LoginView.swift
+//  RegisterView.swift
 //  Prueba Macroplay
 //
-//  Created by William Vidal on 22/07/25.
+//  Created by William Vidal on 23/07/25.
 //
 
 import SwiftUI
 
-struct LoginView: View {
-    @StateObject private var viewModel: LoginViewModel
-    @StateObject private var registerViewModel: RegisterViewModel
+struct RegisterView: View {
+    @StateObject private var viewModel: RegisterViewModel
     
-    init(viewModel: LoginViewModel, registerViewModel: RegisterViewModel) {
+    init(viewModel: RegisterViewModel) {
         _viewModel = StateObject(wrappedValue: viewModel)
-        _registerViewModel = StateObject(wrappedValue: registerViewModel)
     }
     
     var body: some View {
@@ -25,9 +23,10 @@ struct LoginView: View {
                 .ignoresSafeArea()
                 
                 VStack(spacing: 20) {
-                    Text("Iniciar Sesión")
+                    Text("Crear cuenta")
                         .font(.largeTitle)
                         .bold()
+                        .foregroundColor(.black)
                     
                     TextField("Correo", text: $viewModel.email)
                         .textContentType(.emailAddress)
@@ -52,14 +51,14 @@ struct LoginView: View {
                     }
                     
                     Button(action: {
-                        viewModel.login()
+                        Task { viewModel.registerUser() }
                     }) {
                         if case .loading = viewModel.uiState {
                             ProgressView()
                                 .progressViewStyle(CircularProgressViewStyle())
                                 .frame(maxWidth: .infinity)
                         } else {
-                            Text("Entrar")
+                            Text("Registrarse")
                                 .font(.headline)
                                 .foregroundColor(.white)
                                 .padding()
@@ -69,19 +68,13 @@ struct LoginView: View {
                                 .shadow(radius: 3)
                         }
                     }
-                    .padding(.top, 10)
+                    //.disabled(!viewModel.isFormValid)
                     
-                    NavigationLink("¿No tienes cuenta? Regístrate aquí") {
-                        RegisterView(viewModel: registerViewModel)
-                    }
-                    .foregroundColor(.black)
-                    .underline()
-                    .padding(.top, 10)
-                    
+                    Spacer()
                 }
                 .padding()
             }
         }
+        .tint(.green)
     }
-    
 }

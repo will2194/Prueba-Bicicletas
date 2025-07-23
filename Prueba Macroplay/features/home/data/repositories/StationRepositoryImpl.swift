@@ -12,10 +12,10 @@ final class StationRepositoryImpl: StationRepository {
         guard let url = URL(string: "https://api.citybik.es/v2/networks/ecobici") else {
             throw URLError(.badURL)
         }
-
+        
         let (data, _) = try await URLSession.shared.data(from: url)
         let decoded = try JSONDecoder().decode(EcoBiciResponseModel.self, from: data)
-
+        
         return decoded.network.stations.map { ecoBiciResponseModel in
             Station(
                 id: ecoBiciResponseModel.id,

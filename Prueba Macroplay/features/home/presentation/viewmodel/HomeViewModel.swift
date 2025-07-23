@@ -10,10 +10,10 @@ import Foundation
 @MainActor
 final class HomeViewModel: ObservableObject {
     @Published var uiState: HomeState = .loading
-
+    
     private let getStationsUseCase: GetStationsUseCase
     private let session: SessionManager
-
+    
     init(getStationsUseCase: GetStationsUseCase, session: SessionManager) {
         self.getStationsUseCase = getStationsUseCase
         self.session = session

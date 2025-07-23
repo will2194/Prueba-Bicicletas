@@ -9,11 +9,11 @@ import Foundation
 
 final class GetStationsUseCase {
     private let repository: StationRepository
-
+    
     init(repository: StationRepository) {
         self.repository = repository
     }
-
+    
     func execute() async throws -> [Station] {
         try await repository.getStations()
     }
