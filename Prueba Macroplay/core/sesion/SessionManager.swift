@@ -11,15 +11,15 @@ import Combine
 
 class SessionManager: ObservableObject {
     @Published var isLoggedIn: Bool = false
-
+    
     init() {
         self.isLoggedIn = Auth.auth().currentUser != nil
-
+        
         Auth.auth().addStateDidChangeListener { _, user in
             self.isLoggedIn = user != nil
         }
     }
-
+    
     func logout() {
         do {
             try Auth.auth().signOut()

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		59E1ECB9F0B28B3B3B79168A /* Pods_Prueba_Macroplay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC42A7C5AC662E8F8184AE9 /* Pods_Prueba_Macroplay.framework */; };
-		788458092E313EED000F931C /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788458082E313EED000F931C /* colors.swift */; };
 		7884580C2E3145FC000F931C /* StationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7884580B2E3145FC000F931C /* StationCardView.swift */; };
 		78A211922E30693900F2D607 /* Prueba_MacroplayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A211912E30693900F2D607 /* Prueba_MacroplayApp.swift */; };
 		78A211962E30693D00F2D607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78A211952E30693D00F2D607 /* Assets.xcassets */; };
@@ -33,6 +32,14 @@
 		78B9B2F32E309E04007D7656 /* GetStationsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B9B2F22E309E04007D7656 /* GetStationsUseCase.swift */; };
 		78B9B2F62E309E63007D7656 /* HomeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B9B2F52E309E63007D7656 /* HomeState.swift */; };
 		78B9B2F92E309EB5007D7656 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B9B2F82E309EB5007D7656 /* HomeViewModel.swift */; };
+		78BDE4112E3153A5009887C2 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BDE4102E3153A5009887C2 /* DetailView.swift */; };
+		78BDE4132E315419009887C2 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BDE4122E315419009887C2 /* DetailViewModel.swift */; };
+		78BDE4152E315EE6009887C2 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BDE4142E315EE6009887C2 /* BlurView.swift */; };
+		78BDE41A2E315FFF009887C2 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BDE4192E315FFF009887C2 /* RoundedCorner.swift */; };
+		78BDE41C2E316C81009887C2 /* RegisterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BDE41B2E316C81009887C2 /* RegisterUseCase.swift */; };
+		78BDE41E2E316CF1009887C2 /* RegisterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BDE41D2E316CF1009887C2 /* RegisterState.swift */; };
+		78BDE4202E316D1F009887C2 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BDE41F2E316D1F009887C2 /* RegisterViewModel.swift */; };
+		78BDE4222E316DD6009887C2 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BDE4212E316DD6009887C2 /* RegisterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +62,6 @@
 /* Begin PBXFileReference section */
 		1BC42A7C5AC662E8F8184AE9 /* Pods_Prueba_Macroplay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prueba_Macroplay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A733660C01BE3DDD20B38C /* Pods-Prueba Macroplay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prueba Macroplay.release.xcconfig"; path = "Target Support Files/Pods-Prueba Macroplay/Pods-Prueba Macroplay.release.xcconfig"; sourceTree = "<group>"; };
-		788458082E313EED000F931C /* colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = "<group>"; };
 		7884580B2E3145FC000F931C /* StationCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationCardView.swift; sourceTree = "<group>"; };
 		78A2118E2E30693900F2D607 /* Prueba Macroplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Prueba Macroplay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A211912E30693900F2D607 /* Prueba_MacroplayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prueba_MacroplayApp.swift; sourceTree = "<group>"; };
@@ -83,6 +89,15 @@
 		78B9B2F22E309E04007D7656 /* GetStationsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStationsUseCase.swift; sourceTree = "<group>"; };
 		78B9B2F52E309E63007D7656 /* HomeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeState.swift; sourceTree = "<group>"; };
 		78B9B2F82E309EB5007D7656 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		78BDE40F2E3152CB009887C2 /* Prueba-Macroplay-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Prueba-Macroplay-Info.plist"; sourceTree = SOURCE_ROOT; };
+		78BDE4102E3153A5009887C2 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		78BDE4122E315419009887C2 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		78BDE4142E315EE6009887C2 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		78BDE4192E315FFF009887C2 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		78BDE41B2E316C81009887C2 /* RegisterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUseCase.swift; sourceTree = "<group>"; };
+		78BDE41D2E316CF1009887C2 /* RegisterState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterState.swift; sourceTree = "<group>"; };
+		78BDE41F2E316D1F009887C2 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		78BDE4212E316DD6009887C2 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		8B11FAB1A423FDCFA64EF74B /* Pods-Prueba Macroplay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prueba Macroplay.debug.xcconfig"; path = "Target Support Files/Pods-Prueba Macroplay/Pods-Prueba Macroplay.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				78B9B2E02E308695007D7656 /* sesion */,
-				788458082E313EED000F931C /* colors.swift */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -148,7 +162,7 @@
 		7884580E2E314F93000F931C /* presentation */ = {
 			isa = PBXGroup;
 			children = (
-				788458112E314FB0000F931C /* states */,
+				788458112E314FB0000F931C /* components */,
 				7884580F2E314F9B000F931C /* view */,
 				788458102E314FA1000F931C /* viewmodel */,
 			);
@@ -158,6 +172,7 @@
 		7884580F2E314F9B000F931C /* view */ = {
 			isa = PBXGroup;
 			children = (
+				78BDE4102E3153A5009887C2 /* DetailView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -165,15 +180,18 @@
 		788458102E314FA1000F931C /* viewmodel */ = {
 			isa = PBXGroup;
 			children = (
+				78BDE4122E315419009887C2 /* DetailViewModel.swift */,
 			);
 			path = viewmodel;
 			sourceTree = "<group>";
 		};
-		788458112E314FB0000F931C /* states */ = {
+		788458112E314FB0000F931C /* components */ = {
 			isa = PBXGroup;
 			children = (
+				78BDE4192E315FFF009887C2 /* RoundedCorner.swift */,
+				78BDE4142E315EE6009887C2 /* BlurView.swift */,
 			);
-			path = states;
+			path = components;
 			sourceTree = "<group>";
 		};
 		78A211852E30693900F2D607 = {
@@ -201,13 +219,14 @@
 		78A211902E30693900F2D607 /* Prueba Macroplay */ = {
 			isa = PBXGroup;
 			children = (
-				788458072E313ECE000F931C /* core */,
 				78A481FB2E30776B00C86427 /* AppDelegate.swift */,
 				78A211952E30693D00F2D607 /* Assets.xcassets */,
+				788458072E313ECE000F931C /* core */,
 				78A211BB2E306A2A00F2D607 /* features */,
 				78A481FD2E30784C00C86427 /* GoogleService-Info.plist */,
 				78A211972E30693D00F2D607 /* Preview Content */,
 				78A211912E30693900F2D607 /* Prueba_MacroplayApp.swift */,
+				78BDE40F2E3152CB009887C2 /* Prueba-Macroplay-Info.plist */,
 			);
 			path = "Prueba Macroplay";
 			sourceTree = "<group>";
@@ -288,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				78A211C22E306B3400F2D607 /* LoginView.swift */,
+				78BDE4212E316DD6009887C2 /* RegisterView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -296,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				78A211C42E306B7500F2D607 /* LoginViewModel.swift */,
+				78BDE41F2E316D1F009887C2 /* RegisterViewModel.swift */,
 			);
 			path = viewmodel;
 			sourceTree = "<group>";
@@ -304,6 +325,7 @@
 			isa = PBXGroup;
 			children = (
 				78A211C72E306CE200F2D607 /* LoginState.swift */,
+				78BDE41D2E316CF1009887C2 /* RegisterState.swift */,
 			);
 			path = states;
 			sourceTree = "<group>";
@@ -320,6 +342,7 @@
 			isa = PBXGroup;
 			children = (
 				78A211D02E30701000F2D607 /* LoginUseCase.swift */,
+				78BDE41B2E316C81009887C2 /* RegisterUseCase.swift */,
 			);
 			path = usecases;
 			sourceTree = "<group>";
@@ -629,6 +652,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78B9B2DF2E30854F007D7656 /* HomeView.swift in Sources */,
+				78BDE4202E316D1F009887C2 /* RegisterViewModel.swift in Sources */,
 				78A481FC2E30776B00C86427 /* AppDelegate.swift in Sources */,
 				7884580C2E3145FC000F931C /* StationCardView.swift in Sources */,
 				78B9B2F32E309E04007D7656 /* GetStationsUseCase.swift in Sources */,
@@ -636,16 +660,22 @@
 				78B9B2F92E309EB5007D7656 /* HomeViewModel.swift in Sources */,
 				78B9B2F62E309E63007D7656 /* HomeState.swift in Sources */,
 				78A211CD2E306FB000F2D607 /* LoginRepository.swift in Sources */,
-				788458092E313EED000F931C /* colors.swift in Sources */,
+				78BDE4152E315EE6009887C2 /* BlurView.swift in Sources */,
 				78A211C52E306B7500F2D607 /* LoginViewModel.swift in Sources */,
 				78A211C82E306CE200F2D607 /* LoginState.swift in Sources */,
 				78B9B2F12E309C5C007D7656 /* Station.swift in Sources */,
 				78A211C32E306B3400F2D607 /* LoginView.swift in Sources */,
+				78BDE4112E3153A5009887C2 /* DetailView.swift in Sources */,
+				78BDE4222E316DD6009887C2 /* RegisterView.swift in Sources */,
 				78B9B2EB2E309B67007D7656 /* EcoBiciModel.swift in Sources */,
 				78A211D12E30701000F2D607 /* LoginUseCase.swift in Sources */,
+				78BDE4132E315419009887C2 /* DetailViewModel.swift in Sources */,
 				78B9B2ED2E309BE8007D7656 /* StationRepository.swift in Sources */,
 				78A211922E30693900F2D607 /* Prueba_MacroplayApp.swift in Sources */,
+				78BDE41C2E316C81009887C2 /* RegisterUseCase.swift in Sources */,
+				78BDE41E2E316CF1009887C2 /* RegisterState.swift in Sources */,
 				78B9B2E22E3086AB007D7656 /* SessionManager.swift in Sources */,
+				78BDE41A2E315FFF009887C2 /* RoundedCorner.swift in Sources */,
 				78A211CF2E306FDE00F2D607 /* LoginRepositoryImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -809,6 +839,8 @@
 				DEVELOPMENT_TEAM = T47CTWZH65;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Prueba-Macroplay-Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "La app necesita tu ubicación para mostrar estaciones en el mapa.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -840,6 +872,8 @@
 				DEVELOPMENT_TEAM = T47CTWZH65;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Prueba-Macroplay-Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "La app necesita tu ubicación para mostrar estaciones en el mapa.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
